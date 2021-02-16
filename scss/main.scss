@@ -11,6 +11,11 @@
     flex-direction: column;
 }
 
+@mixin gridlayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 @mixin commoncode($part1, $part2) {
     text-transform: $part2;
     letter-spacing: $part1;
@@ -18,19 +23,17 @@
 
 @mixin pcode {
     color: #2ecc71;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 @mixin hcode {
-    color: #922ecc;
+    color: #3e2ecc;
     font-size: 5rem;
 }
 
-$bg-color: #34495e; //variable
+$bg-color: #8620da; //variable
 .main_header {
     @include felxprob;
-    width: 100vw;
-    height: 100vh;
     background: $bg-color;
     h1 {
         @include hcode;
@@ -45,5 +48,20 @@ $bg-color: #34495e; //variable
         &:hover {
             color: #f1c40f;
         }
+    }
+}
+
+$boxbg: red;
+.main-box {
+    @include gridlayout;
+    background: $bg-color;
+    .box1 {
+        background: $boxbg;
+        padding: 15px 10px;
+        border: 2px solid #27ae60;
+    }
+    & :hover {
+        background: #000;
+        color: #fff;
     }
 }

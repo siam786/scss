@@ -19,13 +19,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  background: #34495e;
+  background: #8620da;
 }
 
 .main_header h1 {
-  color: #922ecc;
+  color: #3e2ecc;
   font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: 0.8rem;
@@ -37,12 +35,31 @@
 
 .main_header p {
   color: #2ecc71;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-transform: lowercase;
   letter-spacing: 0.1rem;
 }
 
 .main_header p:hover {
   color: #f1c40f;
+}
+
+.main-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background: #8620da;
+}
+
+.main-box .box1 {
+  background: red;
+  padding: 15px 10px;
+  border: 2px solid #27ae60;
+}
+
+.main-box :hover {
+  background: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
