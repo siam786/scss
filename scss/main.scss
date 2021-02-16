@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin felxprob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin commoncode($part1, $part2) {
+    text-transform: $part2;
+    letter-spacing: $part1;
+}
+
+@mixin pcode {
+    color: #2ecc71;
+    font-size: 1.5rem;
+}
+
+@mixin hcode {
+    color: #922ecc;
+    font-size: 5rem;
+}
+
+$bg-color: #34495e; //variable
+.main_header {
+    @include felxprob;
+    width: 100vw;
+    height: 100vh;
+    background: $bg-color;
+    h1 {
+        @include hcode;
+        @include commoncode(0.8rem, uppercase);
+        &:hover {
+            color: #27ae60;
+        }
+    }
+    p {
+        @include pcode;
+        @include commoncode(0.1rem, lowercase);
+        &:hover {
+            color: #f1c40f;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #34495e;
+}
+
+.main_header h1 {
+  color: #922ecc;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+
+.main_header h1:hover {
+  color: #27ae60;
+}
+
+.main_header p {
+  color: #2ecc71;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  letter-spacing: 0.1rem;
+}
+
+.main_header p:hover {
+  color: #f1c40f;
+}
+/*# sourceMappingURL=main.css.map */
